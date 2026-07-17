@@ -1,0 +1,67 @@
+# ── Raw data (large CSV — not committed to git) ───────────────────────────────
+data/raw/*
+!data/raw/.gitkeep
+*.csv
+
+# ── Processed pipeline artifacts (regenerated from raw via run_all.py) ────────
+data/processed/*
+!data/processed/.gitkeep
+*.parquet
+*.db
+
+# ── Trained model files ───────────────────────────────────────────────────────
+data/processed/models/
+*.txt.lightgbm
+*.json.xgb
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+
+# ── Jupyter notebooks checkpoints ─────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Streamlit secrets / local config ──────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Build / dist ──────────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+
+# ── Temp / scratch files ──────────────────────────────────────────────────────
+_*.py
+*.log
+
+APP_FLOW.md
+DESIGN.md
+IMPLEMENTATION_PLAN.md
+PRD.md
+RULES.md
+SCHEMA.md
+TECH_SPEC.md
+TRACKER.md
+2.png
+1.png
+ParkPulse-ParkingInduced-Congestion-Intelligence.pdf
